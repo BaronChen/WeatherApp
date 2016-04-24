@@ -1,0 +1,7 @@
+/packages
+/WeatherApp.Services/obj
+/WeatherApp.Services/bin
+/WeatherApp.Test/obj
+/WeatherApp.Test/bin
+/WeatherApp.Web/obj
+/WeatherApp.Web/bin

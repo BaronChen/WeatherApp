@@ -1,0 +1,46 @@
+﻿<md-content flex="100" layout-padding="">
+	<md-toolbar class=" md-warn" ng-show="showError">
+		<div class="md-toolbar-tools">
+			<h2 class="md-flex">{{errorMessage}}</h2>
+			<span flex=""></span>
+			<md-button aria-label="Close" ng-click="vm.hideErrorMessage()">
+				Close
+			</md-button>
+		</div>
+	</md-toolbar>
+	<div layout-gt-sm="row">
+
+		<div flex-gt-sm="70" flex-sm="100"  layout-gt-sm="row" layout-align="center center">
+			<md-autocomplete flex="100" ng-disabled="false"
+							 md-no-cache="false"
+							 md-selected-item="vm.selectedCity"
+							 md-search-text="vm.searchCity"
+							 md-selected-item-change="vm.selectedCityChange(item)"
+							 md-items="item in vm.queryCity(vm.searchCity)"
+							 md-item-text="item.City+', '+item.Country"
+							 md-min-length="0"
+							 md-floating-label="City">
+				<md-item-template>
+					<span md-highlight-text="vm.searchCity" md-highlight-flags="^i">{{item.City}}, {{item.Country}}</span>
+				</md-item-template>
+				<md-not-found>
+					Cannot find city "{{vm.searchCity}}"
+				</md-not-found>
+			</md-autocomplete>
+		</div>
+		<div flex-sm=""></div>
+
+		<div flex-gt-sm="10" layout="row" flex-sm="100" layout-align="center start" layout-sm="column" layout-align-sm="end center">
+			<md-button class="md-fab md-primary" aria-label="getWeather" ng-click="vm.getWeather()">
+				<md-icon md-svg-icon="search"></md-icon>
+			</md-button>
+		</div>
+	</div>
+
+	<weather-info-directive current-weather="currentWeather"></weather-info-directive>
+
+
+</md-content>
+
+
+

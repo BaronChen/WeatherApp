@@ -1,0 +1,71 @@
+﻿<div ng-if="ctrl.currentWeather" class="my-grid-list" flex="100">
+	<md-grid-list md-cols-xs="1" md-cols-sm="1" md-cols-md="3" md-cols-gt-md="4"
+					md-row-height-gt-md="1:1" md-row-height="2:2"
+					md-gutter="8px">
+		<md-grid-tile class="yellow" md-rowspan="1" md-colspan-gt-sm="2" md-colspan="1">
+			<div layout-gt-sm="column">
+				<h3>{{ctrl.currentWeather.Location}}</h3>
+				<ng-md-icon icon="place" hide show-gt-sm style="fill: black" size="52"></ng-md-icon>
+			</div>
+			
+			<md-grid-tile-footer>
+				<h3>Location</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+
+		<md-grid-tile class="grey" md-rowspan="1" md-colspan-gt-sm="2" md-colspan="1">
+			<div layout-gt-sm="column">
+				<h2>{{ctrl.currentWeather.Visibility}}</h2>
+				<ng-md-icon icon="visibility" hide show-gt-sm style="fill: black" size="52"></ng-md-icon>
+			</div>
+			<md-grid-tile-footer>
+				<h3>Visibility</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+		<md-grid-tile class="blue" md-rowspan-gt-sm="2" md-rowspan="1">
+			<div layout-gt-sm="column">
+				<h1>{{ctrl.currentWeather.RelativeHumidity}}</h1>
+				<ng-md-icon icon="opacity" hide show-gt-sm style="fill: black" size="64"></ng-md-icon>
+			</div>
+			<md-grid-tile-footer>
+				<h3>RelativeHumidity</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+		<md-grid-tile class="red" md-rowspan="1" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
+			<div layout-gt-sm="column">
+				<h4>{{ctrl.currentWeather.Time}}</h4>
+				<ng-md-icon icon="access_time" hide show-gt-sm style="fill: black" size="52"></ng-md-icon>
+			</div>
+			<md-grid-tile-footer>
+				<h3>Time</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+		<md-grid-tile class="yellow">
+			<div layout-gt-sm="column">
+				<h2>{{ctrl.currentWeather.Temperature}}</h2>
+				<ng-md-icon icon="ac_unit" hide show-gt-sm style="fill: black" size="36"></ng-md-icon>
+			</div>
+			<md-grid-tile-footer>
+				<h3>Temperature</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+		<md-grid-tile class="green" md-rowspan="1" md-rowspan-sm="1">
+			<div layout-gt-sm="column">
+				<h2>{{ctrl.currentWeather.Pressure}}</h2>
+				<ng-md-icon icon="warning" hide show-gt-sm style="fill: black" size="36"></ng-md-icon>
+			</div>
+			<md-grid-tile-footer>
+				<h3>Pressure</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+		<md-grid-tile class="blue" md-rowspan="1" md-rowspan-sm="1">
+			<div layout-gt-sm="column">
+				<h2>{{ctrl.currentWeather.Main}}</h2>
+				<ng-md-icon icon="cloud" hide show-gt-sm style="fill: black" size="36"></ng-md-icon>
+			</div>
+			<md-grid-tile-footer>
+				<h3>SkyConditions</h3>
+			</md-grid-tile-footer>
+		</md-grid-tile>
+	</md-grid-list>
+</div>
