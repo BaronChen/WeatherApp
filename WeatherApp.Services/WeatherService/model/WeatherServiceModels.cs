@@ -37,5 +37,6 @@ namespace WeatherApp.Services.WeatherService.model
 		public string Temperature { get; set; }
 		public string RelativeHumidity { get; set; }
 		public string Pressure { get; set; }
+		public string Sky { get; set; }
 	}
 }

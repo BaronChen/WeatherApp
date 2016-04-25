@@ -20,10 +20,10 @@ namespace WeatherApp.Web.App_Start
 			var container = new Container();
 			container.Options.DefaultScopedLifestyle = new WebApiRequestLifestyle();
 
-			container.RegisterWebApiRequest<CityDataProvider, CityDataProvider>();
-			container.RegisterWebApiRequest<IWeatherHttpProxy, WeatherHttpProxy>();
-			container.RegisterWebApiRequest<WeatherDataProvider, WeatherDataProvider>();
-			container.RegisterWebApiRequest<IWeatherService, WeatherService>();
+			container.RegisterSingleton<CityDataProvider, CityDataProvider>();
+			container.RegisterSingleton<IWeatherHttpProxy, WeatherHttpProxy>();
+			container.RegisterSingleton<WeatherDataProvider, WeatherDataProvider>();
+			container.RegisterSingleton<IWeatherService, WeatherService>();
 
 			container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
 

@@ -59,10 +59,11 @@ namespace WeatherApp.Services.WeatherService.impl
 				Time = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString(),
 				Wind = "Speed: " + weatherRsource.Wind.Speed +" m/s, " + "Deg: " + weatherRsource.Wind.Deg,
 				Visibility = weatherRsource.Visibility.ToString(CultureInfo.InvariantCulture),
-				Main = weatherRsource.Weathers.First().Main,
+				Sky = weatherRsource.Weathers.First().Main,
 				Temperature = weatherRsource.MainWeather.Temp + " Celsius, Range:" + weatherRsource.MainWeather.TempMin + "~" +weatherRsource.MainWeather.TempMax + "Celsius",
 				RelativeHumidity = weatherRsource.MainWeather.Humidity + "%",
-				Pressure = weatherRsource.MainWeather.Pressure + " hPa"
+				Pressure = weatherRsource.MainWeather.Pressure + " hPa",
+				Main = weatherRsource.Weathers.First().Description,
 			};
 
 			return currrentWeather;

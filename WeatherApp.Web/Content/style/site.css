@@ -34,6 +34,20 @@ md-toolbar.md-warn .md-toolbar-tools button span {
 	background-color: transparent !important;
 }
 
+#loading-bar .bar {
+	background: #01579b;
+	height: 4px;
+}
+
+#loading-bar-spinner .spinner-icon {
+	width: 18px;
+	height: 18px;
+	border: solid 4px transparent;
+	border-top-color: #01579b;
+	border-left-color: #01579b;
+	border-radius: 10px;
+}
+
 /*#loading-bar {
   pointer-events: all;
   z-index: 99999;
@@ -53,39 +67,39 @@ md-toolbar.md-warn .md-toolbar-tools button span {
 	padding: 8px;
 }
 
-.my-grid-list .grey {
-	background: #f5f5f5;
-}
+	.my-grid-list .grey {
+		background: #f5f5f5;
+	}
 
-.my-grid-list .green {
-	background: #b9f6ca;
-}
+	.my-grid-list .green {
+		background: #b9f6ca;
+	}
 
-.my-grid-list .yellow {
-	background: #ffff8d;
-}
+	.my-grid-list .yellow {
+		background: #ffff8d;
+	}
 
-.my-grid-list .blue {
-	background: #84ffff;
-}
+	.my-grid-list .blue {
+		background: #84ffff;
+	}
 
-.my-grid-list .purple {
-	background: #b388ff;
-}
+	.my-grid-list .purple {
+		background: #b388ff;
+	}
 
-.my-grid-list .red {
-	background: #ff8a80;
-}
+	.my-grid-list .red {
+		background: #ff8a80;
+	}
 
-.my-grid-list md-grid-tile {
-	-webkit-transition: all 400ms ease-out 50ms;
-	-moz-transition: all 400ms ease-out 50ms;
-	-ms-transition: all 400ms ease-out 50ms;
-	-o-transition: all 400ms ease-out 50ms;
-	transition: all 400ms ease-out 50ms;
-}
+	.my-grid-list md-grid-tile {
+		-webkit-transition: all 400ms ease-out 50ms;
+		-moz-transition: all 400ms ease-out 50ms;
+		-ms-transition: all 400ms ease-out 50ms;
+		-o-transition: all 400ms ease-out 50ms;
+		transition: all 400ms ease-out 50ms;
+	}
 
 md-grid-tile-footer h3 {
 	color: black;
-	font-weight: bold; 
+	font-weight: bold;
 }
