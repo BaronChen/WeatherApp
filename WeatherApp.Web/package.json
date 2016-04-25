@@ -1,0 +1,16 @@
+{
+	"version": "1.0.0",
+	"name": "WeatherApp",
+	"private": true,
+	"devDependencies": {
+		"del": "^2.2.0",
+		"gulp": "^3.9.1",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-rename": "^1.2.2",
+		"gulp-sequence": "^0.4.5",
+		"gulp-uglify": "^1.5.3",
+		"gulp-usemin": "^0.3.22",
+		"gulp-util": "^3.0.7",
+		"gulp-prefix": "^0.0.15"
+	}
+}

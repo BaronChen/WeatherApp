@@ -6,3 +6,6 @@
 /WeatherApp.Web/obj
 /WeatherApp.Web/bin
 /.vs
+/WeatherApp.Web/node_modules
+/WeatherApp.Web/build
+/WeatherApp.Web/index.html

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8" />
+	<title>Weather App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->
+	<base href="/" />
+
+	<!-- build:libjs js/lib.js -->
+	<script src="Scripts/angular.min.js"></script>
+	<script src="Scripts/angular-animate.min.js"></script>
+	<script src="Scripts/angular-material/angular-material.min.js"></script>
+	<script src="Scripts/angular-loading-bar/loading-bar.min.js"></script>
+	<script src="Scripts/angular-aria/angular-aria.min.js"></script>
+	<script src="Scripts/angular-ui-router.min.js"></script>
+	<script src="Scripts/angular-material-icons.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:libcss css/lib.css -->
+	<link rel="stylesheet" href="Content/angular-material.min.css" />
+	<link rel="stylesheet" href="Content/angular-material-icons.css" />
+	<link rel="stylesheet" href="Content/angular-loading-bar/loading-bar.min.css" />
+	<!-- endbuild -->
+
+	<!-- build:css css/site.css -->
+	<link rel="stylesheet" href="Content/style/site.css" />
+	<!-- endbuild -->
+
+	<!-- build:js js/app.js -->
+	<script src="app/app.js"></script>
+	<script src="app/directives/header/header.directive.js"></script>
+	<script src="app/directives/weatherInfo/weatherInfo.controller.js"></script>
+	<script src="app/directives/weatherInfo/weatherInfo.directive.js"></script>
+	<script src="app/services/weather.service.js"></script>
+	<script src="app/controllers/weatherController.js"></script>
+	<!-- endbuild -->
+
+	
+</head>
+<body ng-cloak>
+
+	<md-toolbar layout="row">
+		<header-directive layout="row" layout-align="start center" flex-offset="5"></header-directive>
+	</md-toolbar>
+
+	<div flex layout="row" layout-align="center start">
+
+		<md-content flex-gt-sm="60" flex="100" id="content">
+			<div ui-view></div>
+		</md-content>
+
+	</div>
+
+</body>
+</html>
